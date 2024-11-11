@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "782934927886",
+    "project_id": "appregistro-452f6",
+    "storage_bucket": "appregistro-452f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782934927886:android:34d626c647108a92ed2a5f",
+        "android_client_info": {
+          "package_name": "com.example.prueba"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgGRdUhMc77jDV3MPS1kVnPRULLypOYJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

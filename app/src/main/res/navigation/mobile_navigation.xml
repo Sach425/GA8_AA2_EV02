@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <!-- Fragmento Home -->
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.prueba.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <!-- Fragmento Gallery -->
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.prueba.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <!-- Fragmento Slideshow (Lista de Usuarios) -->
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.prueba.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow">
+
+        <!-- Acción para navegar al fragmento de editar usuario -->
+        <action
+            android:id="@+id/action_nav_slideshow_to_editUser"
+            app:destination="@id/nav_edit_user" />
+    </fragment>
+
+    <!-- Fragmento EditUser (Formulario de Edición de Usuario) -->
+    <fragment
+        android:id="@+id/nav_edit_user"
+        android:name="com.example.prueba.ui.edituser.EditUserFragment"
+        android:label="Edit User"
+        tools:layout="@layout/fragment_edit_user" />
+</navigation>
